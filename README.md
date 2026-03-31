@@ -12,6 +12,7 @@ Datasets are available [here](https://datasets.imdbws.com/) with [description](h
 
 Datasets used in this analysis are title.akas.tsv, title.basics.tsv and title.ratings.tsv
 
+Due to the size of the datasets, it is impossible to upload them into Github. Please download mentioned datasets and put them into directory datasets.
 ## Requirements
 
 To run this analysis, you must install pandas package.
