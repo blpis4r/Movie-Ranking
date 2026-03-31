@@ -27,12 +27,18 @@ pip install -r requirements.txt
 
 There are options that may specify your analysis with a special parameters. There are required parameters, and optional parameters.
 
-You must specify which type of media you want to analyze - movies, TV episodes, or short movies.
+You can specify which type of media you want to analyze - movies, TV series, or short movies.
 ```
 python3 script.py -type_of_media=
 ```
 
-You can specify years from which you want to analyze movies - passing the start and end years of the analysis.
+You also can specify years from which you want to analyze movies - passing the start and end years of the analysis.
 ```
 python3 script.py -start_year= -end_year=
 ```
+
+To include only entities with enough votes, use:
+```
+python3 script.py -n=
+```
+If not specified, the base number 10,000 will be used.
