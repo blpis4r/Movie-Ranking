@@ -120,9 +120,9 @@ def how_many_coprod_and_unk(how_many_regions_all, data_final):
     print("\n")
 
 
-def with_enough_votes(data_final, n):
+def with_enough_votes(data_final, votes):
     data = data_final
-    data = data.loc[data['numVotes']>n]
+    data = data.loc[data['numVotes']>votes]
     data = data.sort_values('averageRating', ascending=False)
 
     print("Top rated movies:")

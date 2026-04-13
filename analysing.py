@@ -1,6 +1,6 @@
 from operations.operations import *
 
-def run_analysis(type_of_media=None, n=10000, start_year=None, end_year=None):
+def run_analysis(type_of_media=None, votes=10000, start_year=None, end_year=None):
     data_akas, data_basics, data_ratings = load_datasets()
 
     data_region = alt_into_region(data_akas)
@@ -13,6 +13,6 @@ def run_analysis(type_of_media=None, n=10000, start_year=None, end_year=None):
 
     how_many_coprod_and_unk(regions_all, data_final)
 
-    enough_votes = with_enough_votes(data_final, n)
+    enough_votes = with_enough_votes(data_final, votes)
 
     top_compare = count_region_in_top(enough_votes)
